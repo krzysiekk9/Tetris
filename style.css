@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(45deg, #24aadb, #6cd2b8);
+  background-size: 600% 100%;
+  animation: gradient 25s linear infinite;
+  animation-direction: alternate;
+
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  position: absolute;
+  margin-top: 5em;
+  text-align: center;
+  background-color: #f2f2f27a;
+  width: 60%;
+  height: 85%;
+  border-radius: 10px;
+  padding: 1.5em 5em 0em 5em;
+}
+
+.right-side-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  align-items: center;
+  position: absolute;
+  width: 20%;
+  left: 70%;
+  padding-top: 15%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 300px;
+  position: absolute;
+  left: 20%;
+  top: 10%;
+}
+
+.grid div {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0000007c;
+}
+
+.mini-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 50px;
+  position: absolute;
+  right: 45%;
+  top: 20%;
+}
+
+@media (min-width: 100px) {
+  .mini-grid {
+    display: none;
+  }
+  .title {
+    font-size: 3em;
+    font-family: 'Inconsolata', monospace;
+    color: #f2f2f2;
+    padding-bottom: 1em;
+  }
+}
+@media (min-width: 1430px) {
+  .mini-grid {
+    display: grid;
+    right: 40%;
+  }
+  .title {
+    font-size: 4em;
+  }
+}
+@media (min-width: 1700px) {
+  .mini-grid {
+    display: grid;
+    right: 45%;
+  }
+  .title {
+    font-size: 4em;
+    font-family: 'Inconsolata', monospace;
+    color: #f2f2f2;
+    position: absolute;
+    padding-bottom: 1em;
+  }
+}
+
+.mini-grid div {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #0000007c;
+}
+
+.tetrisFigure {
+  background-color: #ff3331;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.btn {
+  padding: 0.5em 2em;
+  border: 2px solid #0000009c;
+  color: #00000093;
+  background: none;
+  margin-top: 3em;
+  font-size: 1.2em;
+  font-family: 'Fragment Mono', monospace;
+}
+
+.btn:hover {
+  cursor: pointer;
+  scale: 0.98;
+}
+
+.score-title {
+  font-family: 'Fragment Mono', monospace;
+  font-size: 1.5em;
+}
+
+.score {
+  font-family: 'Fragment Mono', monospace;
+  font-size: 1.7em;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
