@@ -270,7 +270,7 @@ newGameBtn.addEventListener('click', () => {
   init();
 });
 
-/////
+// mini grid
 let miniWidth = 4;
 let miniPosition = 0;
 const miniFigures = [
