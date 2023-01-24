@@ -9,4 +9,10 @@ You can pause your game by hitting "Start/Pause" button. For every row filled yo
 
 ---
 
+### Check it here:
+
+https://tetris-six-cyan.vercel.app/
+
+---
+
 This app is for desktop only.
